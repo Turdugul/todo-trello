@@ -1,5 +1,6 @@
 {
   "name": "my-todo-project-1",
+  "homepage": "https://turdugul.github.io/todo-trello/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.5.0",
     "firebase": "^10.3.1",
+    "gh-pages": "^6.0.0",
     "notistack": "^3.0.1",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.1",
@@ -30,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
